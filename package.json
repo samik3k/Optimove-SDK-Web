@@ -1,0 +1,25 @@
+{
+  "name": "@optimove-inc/web",
+  "version": "1.0.0",
+  "description": "Optimove Web SDK",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/optimove-tech/Optimove-SDK-Web/",
+  "author": "Optimove <konstantin_a@optimove.com> (https://www.optimove.com/)",
+  "bugs": {
+    "url": "https://github.com/optimove-tech/Optimove-SDK-Web//issues"
+  },
+  "homepage": "https://github.com/optimove-tech/Optimove-SDK-Web/#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "files": [
+    "dist",
+    "esm",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc --module commonjs"
+  }
+}
