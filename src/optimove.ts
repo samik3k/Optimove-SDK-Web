@@ -1,6 +1,6 @@
 import { optimoveSDK } from './sdk';
 
-export class Optimove {
+export default class Optimove {
   private token: string;
   private initialized: boolean;
 

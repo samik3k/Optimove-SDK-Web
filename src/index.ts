@@ -1,3 +1,3 @@
-import { Optimove } from './optimove';
+import Optimove from './optimove';
 
-export { Optimove };
+export default Optimove;
