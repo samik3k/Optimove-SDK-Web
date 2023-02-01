@@ -5,22 +5,22 @@
 
 # Usage
 
-Add the package by runnnig: 
+Add the package by runnnig:
 
-```npm install @optimove-inc/web```
+`npm install @optimove-inc/web-sdk`
 
 Create an Optimove object:
 
 ```ts
-import { Optimove } from '@optimove-inc/web';
+import { Optimove } from '@optimove-inc/web-sdk';
 
-const optimove = new Optimove("<YOUR TOKEN>");
+const optimove = new Optimove('<YOUR TOKEN>');
 ```
 
 Call T&T API's, for example:
 
 ```ts
-optimove.setUserId("<YOUR USER ID>")
+optimove.setUserId('<YOUR USER ID>');
 ```
 
 ## License

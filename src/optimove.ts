@@ -1,7 +1,6 @@
-import { optimoveSDK } from "./sdk";
+import { optimoveSDK } from './sdk';
 
 export class Optimove {
-
   private token: string;
   private initialized: boolean;
 
@@ -16,9 +15,9 @@ export class Optimove {
     }
 
     this.initialized = true;
-    await new Promise<void>(resolve => {
+    await new Promise<void>((resolve) => {
       optimoveSDK.initialize(this.token, null, resolve, null);
-    })    
+    });
   }
 
   async registerUser(userId: string, email: string): Promise<void> {
@@ -36,15 +35,22 @@ export class Optimove {
     optimoveSDK.API.setUserEmail(email);
   }
 
-  async setPageVisit(url: string = location.href, pageTitle: string = document.title, pageCategory?: string): Promise<void> {
+  async setPageVisit(
+    url: string = location.href,
+    pageTitle: string = document.title,
+    pageCategory?: string,
+  ): Promise<void> {
     await this.ensureInitialization();
 
-    optimoveSDK.API.setPageVisit(url, pageTitle, pageCategory)
+    optimoveSDK.API.setPageVisit(url, pageTitle, pageCategory);
   }
-  
-  async reportEvent(event: string, params: { [k: string]: any } = {}): Promise<void> {
+
+  async reportEvent(
+    event: string,
+    params: { [k: string]: any } = {},
+  ): Promise<void> {
     await this.ensureInitialization();
 
-    optimoveSDK.API.reportEvent(event, params)
+    optimoveSDK.API.reportEvent(event, params);
   }
 }
