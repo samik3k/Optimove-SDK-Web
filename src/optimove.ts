@@ -47,7 +47,7 @@ export class Optimove {
 
   async reportEvent(
     event: string,
-    params: { [k: string]: any } = {},
+    params: { [k: string]: string | number | boolean } = {},
   ): Promise<void> {
     await this.ensureInitialization();
 
