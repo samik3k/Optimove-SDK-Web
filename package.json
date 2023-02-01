@@ -21,8 +21,7 @@
   },
   "files": [
     "dist",
-    "esm",
-    "src"
+    "esm"
   ],
   "scripts": {
     "build": "tsc --module commonjs"
