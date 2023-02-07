@@ -17,10 +17,24 @@ import { Optimove } from '@optimove-inc/web-sdk';
 const optimove = new Optimove('<YOUR TOKEN>');
 ```
 
-Call T&T API's, for example:
+Set user id:
 
 ```ts
 optimove.setUserId('<YOUR USER ID>');
+```
+
+Set page visit:
+
+```ts
+optimove.setPageVisit('<URL>', '<TITLE>');
+optimove.setPageVisit(); // defaults to location.href and document.title respectively
+```
+
+Report events:
+
+```ts
+optimove.reportEvent('<EVENT NAME>');
+optimove.reportEvent('<EVENT NAME>', { '<PARAM1_KEY>': '<PARAM1_VALUE>' });
 ```
 
 ## License
