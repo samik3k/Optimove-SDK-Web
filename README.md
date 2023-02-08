@@ -23,6 +23,12 @@ Set user id:
 optimove.setUserId('<YOUR USER ID>');
 ```
 
+Register a new user:
+
+```ts
+optimove.registerUser('<YOUR USER ID>', '<YOUR CUSTOMERS EMAIL>');
+```
+
 Set page visit:
 
 ```ts
