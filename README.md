@@ -3,9 +3,11 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/optimove-tech/Optimove-SDK-Web?style=flat-square)](https://github.com/optimove-tech/Optimove-SDK-Web/releases/latest)
 ![GitHub](https://img.shields.io/github/license/optimove-tech/Optimove-SDK-Web?style=flat-square)
 
+Web SDK npm wrapper for Track and Trigger only
+
 # Usage
 
-Add the package by runnnig:
+Add the package by running:
 
 `npm install @optimove-inc/web-sdk`
 
@@ -39,8 +41,8 @@ optimove.setPageVisit(); // defaults to location.href and document.title respect
 Report events:
 
 ```ts
-optimove.reportEvent('<EVENT NAME>');
-optimove.reportEvent('<EVENT NAME>', { '<PARAM1_KEY>': '<PARAM1_VALUE>' });
+optimove.reportEvent('<event_name>');
+optimove.reportEvent('<event_name>', { '<param1_key>': '<param1_value>' });
 ```
 
 ## License
