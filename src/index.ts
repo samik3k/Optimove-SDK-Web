@@ -14,10 +14,10 @@ export default class Optimove {
       return;
     }
 
-    this.initialized = true;
     await new Promise<void>((resolve) => {
       optimoveSDK.initialize(this.token, null, resolve, null);
     });
+    this.initialized = true;
   }
 
   async registerUser(userId: string, email: string): Promise<void> {
