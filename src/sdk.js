@@ -2318,5 +2318,5 @@ export const optimoveSDK = (function () {
 })();
 
 /* TEST-START */
-export default window.optimoveSDK;
+export default globalThis.optimoveSDK;
 /* TEST-END */

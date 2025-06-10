@@ -61,6 +61,9 @@ Updated reportEvent
 
 Replace self to globalThis in sdk.js
 
+## version 0.1.4
+Forgot to fix window
+
 # Credits
 Optimove <konstantin_a@optimove.com> (https://www.optimove.com/)
 
