@@ -56,7 +56,7 @@ Optimove Web SDK is available under the [MIT license](LICENSE).
 
 # ChangeLog
 
-## 10.06.2025 12:00 GMT+3:
+## version 0.1.3 date (10.06.2025 12:00 GMT+3):
 Updated reportEvent
 
 Replace self to globalThis in sdk.js
