@@ -1,20 +1,19 @@
 # Optimove-SDK-Web
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/optimove-tech/Optimove-SDK-Web?style=flat-square)](https://github.com/optimove-tech/Optimove-SDK-Web/releases/latest)
-![GitHub](https://img.shields.io/github/license/optimove-tech/Optimove-SDK-Web?style=flat-square)
-
 Web SDK npm wrapper for Track and Trigger only
 
 # Usage
 
 Add the package by running:
 
-`npm install @optimove-inc/web-sdk`
+`npm install @samik3k/optimove-sdk-fork`
+
+`yarn add @samik3k/optimove-sdk-fork`
 
 Create an Optimove object:
 
 ```ts
-import { Optimove } from '@optimove-inc/web-sdk';
+import Optimove from '@samik3k/optimove-sdk-fork';
 
 const optimove = new Optimove('<YOUR TOKEN>');
 ```
@@ -35,6 +34,8 @@ Set page visit:
 
 ```ts
 optimove.setPageVisit('<URL>', '<TITLE>');
+// PAGE_CATEGORY is optional
+optimove.setPageVisit('<URL>', '<TITLE>', '<PAGE_CATEGORY>');
 optimove.setPageVisit(); // defaults to location.href and document.title respectively
 ```
 
@@ -43,8 +44,24 @@ Report events:
 ```ts
 optimove.reportEvent('<event_name>');
 optimove.reportEvent('<event_name>', { '<param1_key>': '<param1_value>' });
+// callback is optional, if no need set null
+// userId is optional, string
+optimove.reportEvent('<event_name>', { '<param1_key>': '<param1_value>' }, null, '<userId>');
 ```
 
 ## License
 
 Optimove Web SDK is available under the [MIT license](LICENSE).
+
+
+# ChangeLog
+
+## 10.06.2025 12:00 GMT+3:
+Updated reportEvent
+
+Replace self to globalThis in sdk.js
+
+# Credits
+Optimove <konstantin_a@optimove.com> (https://www.optimove.com/)
+
+Alexander Sokolov <samik3k@gmail.com> (fork)

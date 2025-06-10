@@ -375,7 +375,7 @@ export const optimoveSDK = (function () {
 		_coreEvents = optimoveCoreEvents;
 		//load script
 		confversion = _env == 'prod' ? 'web-configuration.1.0.0' : 'web-configuration.1.0.0-stg';
-		_configuration = self.optimoveTenantConfiguration;
+		_configuration = globalThis.optimoveTenantConfiguration;
 		if (!_configuration) {
 			_configFileUrl = _sdkDomain + 'webconfig/' + token + '/' + confversion + '.js';
 			loadScript(_configFileUrl, () => {
@@ -445,7 +445,7 @@ export const optimoveSDK = (function () {
 	};
 
 	const setConfiguration = (callback) => {
-		_configuration = self.optimoveTenantConfiguration;
+		_configuration = globalThis.optimoveTenantConfiguration;
 		getPlaformInfoFromUserAgent(_configuration);
 		if (callback && typeof callback === 'function') {
 			callback();
@@ -2306,7 +2306,7 @@ export const optimoveSDK = (function () {
 	//_API._test_.setCustomConfiguration = setCustomConfiguration;
 	/* TEST-END */
 
-	if (self.optimoveTenantConfiguration) {
+	if (globalThis.optimoveTenantConfiguration) {
 		init(null,null,null, "info");
 	}
 

@@ -48,9 +48,11 @@ export default class Optimove {
   async reportEvent(
     event: string,
     params: { [k: string]: string | number | boolean } = {},
+    callback?: null | (() => any),
+    userId?: string,
   ): Promise<void> {
     await this.ensureInitialization();
 
-    optimoveSDK.API.reportEvent(event, params);
+    optimoveSDK.API.reportEvent(event, params, callback, userId);
   }
 }

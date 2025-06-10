@@ -1,15 +1,15 @@
 {
-  "name": "@optimove-inc/web-sdk",
-  "version": "0.1.1",
-  "description": "Optimove Web SDK",
+  "name": "@samik3k/optimove-sdk-fork",
+  "version": "0.1.2",
+  "description": "Optimove Web SDK Fork",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/optimove-tech/Optimove-SDK-Web/",
-  "author": "Optimove <konstantin_a@optimove.com> (https://www.optimove.com/)",
+  "repository": "https://github.com/samik3k/Optimove-SDK-Web/",
+  "author": "Alexander Sokolov <samik3k@gmail.com> (fork)",
   "bugs": {
-    "url": "https://github.com/optimove-tech/Optimove-SDK-Web/issues"
+    "url": "https://github.com/samik3k/Optimove-SDK-Web/issues"
   },
-  "homepage": "https://github.com/optimove-tech/Optimove-SDK-Web/#readme",
+  "homepage": "https://github.com/samik3k/Optimove-SDK-Web#readme",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.9.4",
